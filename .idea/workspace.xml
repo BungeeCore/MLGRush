@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ed6b98-18d1-4ccd-b139-6a2128ee7e8b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/PaperSpigot_1_8_8_R0_1_SNAPSHOT_latest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/bungeecore/mlgrush/utils/LobbyCountdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/bungeecore/mlgrush/utils/LobbyCountdown.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,12 +42,12 @@
       <file leaf-file-name="LobbyCountdown.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/bungeecore/mlgrush/utils/LobbyCountdown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="563">
+              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#360#873#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#385#1517#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,12 +241,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527463517707</updated>
       <workItem from="1527463523578" duration="50000" />
-      <workItem from="1527463701578" duration="2154000" />
+      <workItem from="1527463701578" duration="2398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2204000" />
+    <option name="totallyTimeSpent" value="2448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -326,12 +323,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/bungeecore/mlgrush/utils/LobbyCountdown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="563">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#360#873#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#385#1517#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
           </folding>
         </state>
       </provider>

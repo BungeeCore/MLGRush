@@ -18,9 +18,14 @@ public class LobbyCountdown {
                     if (countdown != 0) {
                         countdown--;
                     }
+                    for (Player all : Bukkit.getOnlinePlayers()) {
+                        all.setLevel(countdown);
+                        all.setExp((float) countdown / 15);
+                    }
                 } else {
                     for (Player all : Bukkit.getOnlinePlayers()) {
                         ActionBar.sendActionBar(all, "§8§l» §cWarte auf weitere Spieler...");
+                        countdown = 15;
                     }
                 }
 
@@ -29,6 +34,9 @@ public class LobbyCountdown {
                     for (Player all : Bukkit.getOnlinePlayers()) {
                         all.playSound(all.getLocation(), Sound.NOTE_BASS, 3, 3);
                     }
+                }
+                if (countdown == 0) {
+
                 }
             }
         }, 20, 20);
