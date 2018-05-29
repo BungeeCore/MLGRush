@@ -12,7 +12,7 @@ public class LobbyCountdown {
     private static int TaskID = 0;
 
     public static void startCountdown() {
-        Bukkit.getScheduler().scheduleAsyncRepeatingTask(MLGRush.instance, new Runnable() {
+        TaskID = Bukkit.getScheduler().scheduleAsyncRepeatingTask(MLGRush.instance, new Runnable() {
             public void run() {
                 if (Bukkit.getOnlinePlayers().size() == 2) {
                     if (countdown != 0) {
@@ -36,7 +36,20 @@ public class LobbyCountdown {
                     }
                 }
                 if (countdown == 0) {
-
+                    for (Player all : MLGRush.teamBlue) {
+                        all.teleport(LocationAPI.getLocation("Spawn_Blue"));
+                    }
+                    for (Player all : MLGRush.teamRed) {
+                        all.teleport(LocationAPI.getLocation("Spawn_Red"));
+                    }
+                    Bukkit.broadcastMessage(MLGRush.prefix + "§7Lass die Spiele beginnen.");
+                    countdown = 15;
+                    MLGRush.gs = GameState.INGAME;
+                }
+                if (MLGRush.gs != GameState.LOBBY) {
+                    if (Bukkit.getScheduler().isCurrentlyRunning(TaskID)) {
+                        Bukkit.getScheduler().cancelTask(TaskID);
+                    }
                 }
             }
         }, 20, 20);
