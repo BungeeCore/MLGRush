@@ -5,7 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 
-public class LobbyCountdown {
+public class Countdown {
 
     private static int countdown = 15;
 
@@ -37,10 +37,10 @@ public class LobbyCountdown {
                 }
                 if (countdown == 0) {
                     for (Player all : MLGRush.teamBlue) {
-                        all.teleport(LocationAPI.getLocation("Spawn_Blue"));
+                        all.teleport(LocationAPI.getLocation("spawn_Blue"));
                     }
                     for (Player all : MLGRush.teamRed) {
-                        all.teleport(LocationAPI.getLocation("Spawn_Red"));
+                        all.teleport(LocationAPI.getLocation("spawn_Red"));
                     }
                     Bukkit.broadcastMessage(MLGRush.prefix + "§7Lass die Spiele beginnen.");
                     countdown = 15;

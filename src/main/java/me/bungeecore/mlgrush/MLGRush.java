@@ -1,7 +1,7 @@
 package me.bungeecore.mlgrush;
 
 import me.bungeecore.mlgrush.utils.GameState;
-import me.bungeecore.mlgrush.utils.LobbyCountdown;
+import me.bungeecore.mlgrush.utils.Countdown;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -14,7 +14,7 @@ public class MLGRush extends JavaPlugin {
 
     public static MLGRush instance;
 
-    public static String prefix = "§7| §9§bMLGRush §7| ";
+    public static String prefix = "§7| §9§lMLG§b§lRush §7| ";
 
     public static File file;
     public static FileConfiguration cfg;
@@ -29,7 +29,7 @@ public class MLGRush extends JavaPlugin {
         gs = GameState.LOBBY;
         file = new File(instance.getDataFolder(), "locs.yml");
         cfg = YamlConfiguration.loadConfiguration(file);
-        LobbyCountdown.startCountdown();
+        Countdown.startCountdown();
     }
 
     @Override

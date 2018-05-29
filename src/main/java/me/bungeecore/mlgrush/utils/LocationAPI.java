@@ -34,4 +34,19 @@ public class LocationAPI {
         Location location = new Location(world, x, y, z, yaw, pitch);
         return location;
     }
+
+    public static void setHigh(Player p, String high) {
+        MLGRush.cfg.set(high + ".Y", p.getLocation().getY());
+
+        try {
+            MLGRush.cfg.save(MLGRush.file);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static int getHigh(String high) {
+        int high1 = MLGRush.cfg.getInt(high + ".Y");
+        return high1;
+    }
 }
